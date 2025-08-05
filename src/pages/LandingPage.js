@@ -21,17 +21,17 @@ const LandingPage = () => {
     <div style={{ 
       minHeight: '100vh', 
       backgroundColor: 'white',
-      padding: '20px',
+      padding: '24px 20px',
       display: 'flex',
       flexDirection: 'column'
     }}>
       {/* Credit Card Visual */}
       <div style={{
         width: '100%',
-        height: '200px',
+        height: '180px',
         backgroundColor: '#FF6B35',
-        borderRadius: '16px',
-        marginBottom: '24px',
+        borderRadius: '12px',
+        marginBottom: '32px',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -39,98 +39,172 @@ const LandingPage = () => {
       }}>
         <div style={{
           position: 'absolute',
-          top: '20px',
-          left: '20px',
-          fontSize: '32px',
+          top: '16px',
+          left: '16px',
+          fontSize: '28px',
           fontWeight: 'bold',
-          color: 'white'
+          color: 'black'
         }}>
           A
         </div>
         <div style={{
           position: 'absolute',
-          top: '20px',
-          right: '20px',
-          fontSize: '14px',
-          color: 'white',
-          textTransform: 'uppercase'
+          top: '16px',
+          right: '16px',
+          fontSize: '12px',
+          color: 'black',
+          textTransform: 'uppercase',
+          fontWeight: '500'
         }}>
           credit
         </div>
       </div>
 
       {/* Main Heading */}
-      <Typography.Title 
-        view="large" 
-        tag="h1" 
-        style={{ 
-          textAlign: 'center', 
-          marginBottom: '8px',
-          color: '#000'
-        }}
-      >
-        Кредитная карта Альфа-Банка
-      </Typography.Title>
+      <div style={{ 
+        textAlign: 'center', 
+        marginBottom: '16px'
+      }}>
+        <Typography.Title 
+          view="large" 
+          tag="h1" 
+          style={{ 
+            color: '#000',
+            margin: '0 0 4px 0',
+            fontSize: '24px',
+            fontWeight: 'bold'
+          }}
+        >
+          Кредитная карта
+        </Typography.Title>
+        <Typography.Title 
+          view="large" 
+          tag="h1" 
+          style={{ 
+            color: '#000',
+            margin: '0',
+            fontSize: '28px',
+            fontWeight: 'bold'
+          }}
+        >
+          Альфа-Банка
+        </Typography.Title>
+      </div>
 
       {/* Subheading */}
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center',
-        marginBottom: '32px'
+        marginBottom: '40px'
       }}>
         <Typography.Text 
           view="primary-medium" 
           style={{ 
             color: '#666',
-            marginRight: '8px'
+            marginRight: '6px',
+            fontSize: '16px'
           }}
         >
           Наша лучшая кредитная карта
         </Typography.Text>
-        <span style={{ fontSize: '16px' }}>🔥</span>
+        <span style={{ fontSize: '14px' }}>🔥</span>
       </div>
 
       {/* Feature Cards */}
-      <Space direction="vertical" size="m" style={{ flex: 1 }}>
-        <Card>
-          <Typography.Title view="small" tag="h3" style={{ marginBottom: '8px' }}>
+      <div style={{ flex: 1, marginBottom: '40px' }}>
+        <div style={{
+          backgroundColor: '#F5F5F5',
+          borderRadius: '12px',
+          padding: '16px',
+          marginBottom: '12px'
+        }}>
+          <Typography.Title view="small" tag="h3" style={{ 
+            marginBottom: '6px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            color: '#000'
+          }}>
             Бесплатное обслуживание
           </Typography.Title>
-          <Typography.Text view="primary-medium" style={{ color: '#666' }}>
+          <Typography.Text view="primary-medium" style={{ 
+            color: '#666',
+            fontSize: '14px',
+            lineHeight: '1.4'
+          }}>
             бесплатно в 1-й год, далее 990 ₽, если пользуетесь картой
           </Typography.Text>
-        </Card>
+        </div>
 
-        <Card>
-          <Typography.Title view="small" tag="h3" style={{ marginBottom: '8px' }}>
+        <div style={{
+          backgroundColor: '#F5F5F5',
+          borderRadius: '12px',
+          padding: '16px',
+          marginBottom: '12px'
+        }}>
+          <Typography.Title view="small" tag="h3" style={{ 
+            marginBottom: '6px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            color: '#000'
+          }}>
             1 000 000 ₽
           </Typography.Title>
-          <Typography.Text view="primary-medium" style={{ color: '#666' }}>
+          <Typography.Text view="primary-medium" style={{ 
+            color: '#666',
+            fontSize: '14px',
+            lineHeight: '1.4'
+          }}>
             максимальный кредитный лимит
           </Typography.Text>
-        </Card>
+        </div>
 
-        <Card>
-          <Typography.Title view="small" tag="h3" style={{ marginBottom: '8px' }}>
+        <div style={{
+          backgroundColor: '#F5F5F5',
+          borderRadius: '12px',
+          padding: '16px',
+          marginBottom: '12px'
+        }}>
+          <Typography.Title view="small" tag="h3" style={{ 
+            marginBottom: '6px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            color: '#000'
+          }}>
             60 дней без %
           </Typography.Title>
-          <Typography.Text view="primary-medium" style={{ color: '#666' }}>
+          <Typography.Text view="primary-medium" style={{ 
+            color: '#666',
+            fontSize: '14px',
+            lineHeight: '1.4'
+          }}>
             на любые покупки
           </Typography.Text>
-        </Card>
+        </div>
 
-        <Card>
-          <Typography.Title view="small" tag="h3" style={{ marginBottom: '8px' }}>
+        <div style={{
+          backgroundColor: '#F5F5F5',
+          borderRadius: '12px',
+          padding: '16px',
+          marginBottom: '12px'
+        }}>
+          <Typography.Title view="small" tag="h3" style={{ 
+            marginBottom: '6px',
+            fontSize: '18px',
+            fontWeight: 'bold',
+            color: '#000'
+          }}>
             Кэшбэк каждый месяц
           </Typography.Title>
-          <Typography.Text view="primary-medium" style={{ color: '#666' }}>
+          <Typography.Text view="primary-medium" style={{ 
+            color: '#666',
+            fontSize: '14px',
+            lineHeight: '1.4'
+          }}>
             до 50% за покупки у партнеров
           </Typography.Text>
-        </Card>
-      </Space>
-
-      <Gap size="xl" />
+        </div>
+      </div>
 
       {/* Call to Action Button */}
       <Button
@@ -144,7 +218,8 @@ const LandingPage = () => {
           borderRadius: '12px',
           height: '56px',
           fontSize: '16px',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
+          marginTop: 'auto'
         }}
       >
         Оформить карту
