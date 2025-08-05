@@ -130,33 +130,56 @@
             justify-content: center;
         }
 
-        .header-icon {
-            width: 120px;
-            height: 120px;
-            background-color: #FF6B35;
+        .moai-head {
+            width: 200px;
+            height: 200px;
+            background-color: #555;
             border-radius: 50%;
+            margin-bottom: 32px;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 32px;
-            font-size: 48px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .moai-head::before {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(45deg, #444 0%, #666 50%, #444 100%);
+            border-radius: 50%;
+            box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .moai-head::after {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 80px;
+            background: #333;
+            border-radius: 50% 50% 0 0;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .header-title {
             text-align: center;
-            margin-bottom: 16px;
-            font-size: 28px;
+            margin-bottom: 24px;
+            font-size: 32px;
             font-weight: bold;
             color: #000;
         }
 
         .header-description {
             text-align: center;
-            color: #666;
+            color: #333;
             margin-bottom: 48px;
-            max-width: 400px;
-            font-size: 16px;
-            line-height: 1.5;
+            max-width: 500px;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .back-button {
@@ -227,15 +250,15 @@
 
     <!-- Header Page -->
     <div id="header-page" class="header-page">
-        <!-- Header Icon -->
-        <div class="header-icon">👤</div>
+        <!-- Moai Head -->
+        <div class="moai-head"></div>
 
         <!-- Title -->
-        <div class="header-title">Заглушка с головой</div>
+        <div class="header-title">Только тсCC</div>
 
         <!-- Description -->
         <div class="header-description">
-            Это вторая страница приложения. Здесь будет размещена основная функциональность с заголовком.
+            Вы поучаствовали в очень важном исследовании, которое поможет улучшить продукт. Вы – наш герой!
         </div>
 
         <!-- Back Button -->
