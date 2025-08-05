@@ -34,11 +34,6 @@ function renderLanding() {
         
         <div class="features">
           <div class="feature">
-            <div class="feature__title">Бесплатный выбор даты платежа</div>
-            <div class="feature__desc">выберите удобную вам дату для выставления обязательного платежа</div>
-          </div>
-          
-          <div class="feature">
             <div class="feature__title">Бесплатное обслуживание</div>
             <div class="feature__desc">бесплатно в 1-й год, далее 990 ₽, если пользуетесь картой</div>
           </div>
