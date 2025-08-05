@@ -14,7 +14,7 @@ function sendAnalyticsEvent(gaEvent, ymEvent) {
 function renderLanding() {
   // Отправляем событие просмотра экрана только один раз за сессию
   if (!sessionStorage.getItem('landingViewed')) {
-    sendAnalyticsEvent('5942_page_view_zkd_var1', '5942_page_view_zkd_var1');
+    sendAnalyticsEvent('5942_page_view_kk_var1', '5942_page_view_kk_var1');
     sessionStorage.setItem('landingViewed', '1');
   }
   // Если уже была заглушка, не показываем лендинг
@@ -69,7 +69,7 @@ function renderLanding() {
 function renderPlaceholder() {
   // Отправляем событие просмотра финальной страницы только один раз за сессию
   if (!sessionStorage.getItem('endPageViewed')) {
-    sendAnalyticsEvent('5942_end_page_view_zkd_var1', '5942_end_page_view_zkd_var1');
+    sendAnalyticsEvent('5942_end_page_view_kk_var1', '5942_end_page_view_kk_var1');
     sessionStorage.setItem('endPageViewed', '1');
   }
   app.innerHTML = `
