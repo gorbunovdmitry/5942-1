@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредитная карта Альфа-Банка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .card-visual {
+            width: 100%;
+            height: 180px;
+            background-color: #FF6B35;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-logo {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .card-text {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 12px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .main-heading {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .title-line1 {
+            color: #000;
+            margin: 0 0 4px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title-line2 {
+            color: #000;
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .subheading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .subtitle-text {
+            color: #666;
+            margin-right: 6px;
+            font-size: 16px;
+        }
+
+        .fire-emoji {
+            font-size: 14px;
+        }
+
+        .features {
+            flex: 1;
+            margin-bottom: 40px;
+        }
+
+        .feature-block {
+            background-color: #F5F5F5;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .feature-title {
+            margin-bottom: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .feature-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            background-color: #333;
+            border: none;
+            border-radius: 12px;
+            height: 56px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            margin-top: auto;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #555;
+        }
+
+        .header-page {
+            display: none;
+            min-height: 100vh;
+            background-color: white;
+            padding: 24px 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-icon {
+            width: 120px;
+            height: 120px;
+            background-color: #FF6B35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            font-size: 48px;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .header-description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 48px;
+            max-width: 400px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .back-button {
+            background-color: transparent;
+            border: 2px solid #333;
+            border-radius: 12px;
+            height: 48px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            padding: 0 24px;
+            transition: all 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="container">
+        <!-- Credit Card Visual -->
+        <div class="card-visual">
+            <div class="card-logo">A</div>
+            <div class="card-text">credit</div>
+        </div>
+
+        <!-- Main Heading -->
+        <div class="main-heading">
+            <div class="title-line1">Кредитная карта</div>
+            <div class="title-line2">Альфа-Банка</div>
+        </div>
+
+        <!-- Subheading -->
+        <div class="subheading">
+            <div class="subtitle-text">Наша лучшая кредитная карта</div>
+            <div class="fire-emoji">🔥</div>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="features">
+            <div class="feature-block">
+                <div class="feature-title">Бесплатное обслуживание</div>
+                <div class="feature-description">бесплатно в 1-й год, далее 990 ₽, если пользуетесь картой</div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-title">1 000 000 ₽</div>
+                <div class="feature-description">максимальный кредитный лимит</div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-title">60 дней без %</div>
+                <div class="feature-description">на любые покупки</div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-title">Кэшбэк каждый месяц</div>
+                <div class="feature-description">до 50% за покупки у партнеров</div>
+            </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <button class="cta-button" onclick="showHeaderPage()">Оформить карту</button>
+    </div>
+
+    <!-- Header Page -->
+    <div id="header-page" class="header-page">
+        <!-- Header Icon -->
+        <div class="header-icon">👤</div>
+
+        <!-- Title -->
+        <div class="header-title">Заглушка с головой</div>
+
+        <!-- Description -->
+        <div class="header-description">
+            Это вторая страница приложения. Здесь будет размещена основная функциональность с заголовком.
+        </div>
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="showLandingPage()">Вернуться назад</button>
+    </div>
+
+    <script>
+        function showHeaderPage() {
+            document.getElementById('landing-page').style.display = 'none';
+            document.getElementById('header-page').style.display = 'flex';
+        }
+
+        function showLandingPage() {
+            document.getElementById('header-page').style.display = 'none';
+            document.getElementById('landing-page').style.display = 'flex';
+        }
+    </script>
+</body>
+</html> 
