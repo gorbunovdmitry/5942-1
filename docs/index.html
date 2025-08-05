@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Кредитная карта Альфа-Банка - Обновлено</title>
     <style>
         /* Обновлено: размеры карты и шрифтов */
@@ -314,16 +317,19 @@
         <button class="back-button" onclick="showLandingPage()">Вернуться назад</button>
     </div>
 
-    <script>
-        function showHeaderPage() {
-            document.getElementById('landing-page').style.display = 'none';
-            document.getElementById('header-page').style.display = 'flex';
-        }
+            <script>
+            // Версия для принудительного обновления кэша
+            console.log('Версия 2.0 - Обновленные размеры карты и шрифтов');
+            
+            function showHeaderPage() {
+                document.getElementById('landing-page').style.display = 'none';
+                document.getElementById('header-page').style.display = 'flex';
+            }
 
-        function showLandingPage() {
-            document.getElementById('header-page').style.display = 'none';
-            document.getElementById('landing-page').style.display = 'flex';
-        }
-    </script>
+            function showLandingPage() {
+                document.getElementById('header-page').style.display = 'none';
+                document.getElementById('landing-page').style.display = 'flex';
+            }
+        </script>
 </body>
 </html> 
