@@ -27,8 +27,8 @@
         }
 
         .card-visual {
-            width: 100%;
-            max-width: 400px;
+            width: calc(100% - 98px);
+            max-width: 600px;
             height: auto;
             aspect-ratio: 16/10;
             margin: 0 auto 32px auto;
@@ -42,29 +42,31 @@
             height: 100%;
             object-fit: contain;
             border-radius: 12px;
-            max-height: 240px;
+            max-height: 300px;
         }
 
         /* Адаптивность для мобильных устройств */
         @media (max-width: 768px) {
             .card-visual {
-                max-width: 320px;
+                width: calc(100% - 60px);
+                max-width: 400px;
                 aspect-ratio: 16/9;
             }
             
             .card-image {
-                max-height: 180px;
+                max-height: 220px;
             }
         }
 
         @media (max-width: 480px) {
             .card-visual {
-                max-width: 280px;
+                width: calc(100% - 40px);
+                max-width: 320px;
                 aspect-ratio: 16/8;
             }
             
             .card-image {
-                max-height: 160px;
+                max-height: 180px;
             }
         }
 
@@ -76,25 +78,25 @@
         .title-line1 {
             color: #000;
             margin: 0 0 4px 0;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: bold;
         }
 
         .title-line2 {
             color: #000;
             margin: 0;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: bold;
         }
 
         /* Адаптивность для заголовков */
         @media (max-width: 768px) {
             .title-line1 {
-                font-size: 24px;
+                font-size: 22px;
             }
             
             .title-line2 {
-                font-size: 24px;
+                font-size: 22px;
             }
         }
 
@@ -118,7 +120,7 @@
         .subtitle-text {
             color: #666;
             margin-right: 6px;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .fire-emoji {
@@ -139,7 +141,7 @@
 
         .feature-title {
             margin-bottom: 6px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             color: #000;
         }
