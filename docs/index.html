@@ -28,8 +28,10 @@
 
         .card-visual {
             width: 100%;
-            height: 180px;
-            margin-bottom: 32px;
+            max-width: 400px;
+            height: auto;
+            aspect-ratio: 16/10;
+            margin: 0 auto 32px auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -38,8 +40,32 @@
         .card-image {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 12px;
+            max-height: 240px;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .card-visual {
+                max-width: 320px;
+                aspect-ratio: 16/9;
+            }
+            
+            .card-image {
+                max-height: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-visual {
+                max-width: 280px;
+                aspect-ratio: 16/8;
+            }
+            
+            .card-image {
+                max-height: 160px;
+            }
         }
 
         .main-heading {
@@ -59,6 +85,27 @@
             margin: 0;
             font-size: 28px;
             font-weight: bold;
+        }
+
+        /* Адаптивность для заголовков */
+        @media (max-width: 768px) {
+            .title-line1 {
+                font-size: 20px;
+            }
+            
+            .title-line2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title-line1 {
+                font-size: 18px;
+            }
+            
+            .title-line2 {
+                font-size: 22px;
+            }
         }
 
         .subheading {
@@ -133,6 +180,8 @@
         .moai-head {
             width: 200px;
             height: 200px;
+            max-width: 80vw;
+            max-height: 80vw;
             margin-bottom: 32px;
             display: flex;
             align-items: center;
@@ -143,6 +192,21 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+
+        /* Адаптивность для головы Моаи */
+        @media (max-width: 768px) {
+            .moai-head {
+                width: 160px;
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .moai-head {
+                width: 120px;
+                height: 120px;
+            }
         }
 
         .header-title {
